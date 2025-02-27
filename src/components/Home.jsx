@@ -5,7 +5,7 @@ import headshot from "../assets/images/headshot.jpg";
 import { Link } from "react-router-dom";
 
 // Import social media icons and other icons
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa"; // Import address, phone, and email icons
 
 const Home = () => {
@@ -276,48 +276,8 @@ const Home = () => {
             Contact Us
           </motion.h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Left Side: Social Media Links, Address, Phone, and Email */}
+            {/* Left Side: Address, Phone, Email, and Social Media Links */}
             <div className="flex flex-col items-center space-y-6">
-              {/* Social Media Links */}
-              <motion.div
-                className="flex space-x-6"
-                initial={{ opacity: 0, x: -50 }} // Starts from the left
-                animate={{ opacity: 1, x: 0 }} // Moves to the normal position
-                transition={{
-                  duration: 1,
-                  ease: "easeOut",
-                }}
-              >
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaFacebook className="w-8 h-8 text-blue-600 hover:text-blue-800 transition duration-300" />
-                </a>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaTwitter className="w-8 h-8 text-blue-400 hover:text-blue-500 transition duration-300" />
-                </a>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaInstagram className="w-8 h-8 text-pink-600 hover:text-pink-700 transition duration-300" />
-                </a>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin className="w-8 h-8 text-blue-700 hover:text-blue-800 transition duration-300" />
-                </a>
-              </motion.div>
-
               {/* Address and Contact Information Side by Side */}
               <motion.div
                 className="flex space-x-8 mt-6"
@@ -354,6 +314,53 @@ const Home = () => {
                     <p>Email: contact@example.com</p>
                   </div>
                 </div>
+              </motion.div>
+
+              {/* Social Media Links */}
+              <motion.div
+                className="flex space-x-6 mt-6"
+                initial={{ opacity: 0, x: -50 }} // Starts from the left
+                animate={{ opacity: 1, x: 0 }} // Moves to the normal position
+                transition={{
+                  duration: 1,
+                  ease: "easeOut",
+                }}
+              >
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook className="w-8 h-8 text-blue-600 hover:text-blue-800 transition duration-300" />
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTwitter className="w-8 h-8 text-blue-400 hover:text-blue-500 transition duration-300" />
+                </a>
+                <a
+                  href="https://www.instagram.com/yafcaghana?igsh=MWIyaTNjYWUxcWROMg=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram className="w-8 h-8 text-pink-600 hover:text-pink-700 transition duration-300" />
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="w-8 h-8 text-blue-700 hover:text-blue-800 transition duration-300" />
+                </a>
+                <a
+                  href="https://t.me/+OGfNrxYYQwzZjFk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTelegram className="w-8 h-8 text-blue-700 hover:text-blue-800 transition duration-300" />
+                </a>
               </motion.div>
 
               <motion.p
