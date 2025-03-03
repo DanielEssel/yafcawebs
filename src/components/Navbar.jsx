@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle the mobile menu
   
   return (
-    <nav className="bg-white p-2 fixed w-full top-0 left-0 z-10">
+    <nav className="bg-red-50 p-2 fixed w-full top-0 left-0 z-10">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-gray-800 font-bold text-xl">YAFCA</div>

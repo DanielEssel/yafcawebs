@@ -5,7 +5,13 @@ import headshot from "../assets/images/headshot.jpg";
 import { Link } from "react-router-dom";
 
 // Import social media icons and other icons
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaTelegram,
+} from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa"; // Import address, phone, and email icons
 
 const Home = () => {
@@ -41,8 +47,8 @@ const Home = () => {
             ease: "easeOut", // Smooth easing effect
           }}
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4">
-            Welcome to <p className="text-pink-400">YAFCA</p>
+          <h1 className="text-4xl mt-40 sm:text-5xl md:text-6xl font-extrabold mb-2">
+            Welcome to <p className="text-lime-400">YAFCA</p>
           </h1>
           <p>Where Faith Meets Action.</p>
           <p className="text-lg sm:text-xl md:text-2xl mb-6">
@@ -76,7 +82,7 @@ const Home = () => {
       </div>
 
       {/* About Section */}
-      <div id="about" className="py-20 bg-gray-100">
+      <div id="about" className="py-20 bg-blue-200">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <motion.h2
             className="text-3xl sm:text-4xl font-extrabold text-center mb-10"
@@ -250,10 +256,18 @@ const Home = () => {
                   alt="Person Sharing Testimony"
                   className="w-full h-48 object-cover rounded-md"
                 />
-                <h3 className="text-xl font-bold mt-4">John Doe's Testimony</h3>
+                <h3 className="text-xl font-bold mt-4">
+                  Esther Oudrey's Testimony
+                </h3>
                 <p className="text-gray-700">
-                  "Thanks to the education project, my life has completely
-                  changed. I was able to pursue my dreams and become a teacher."
+                  "I grew up believing in God but didn’t have a personal
+                  relationship with Him. Everything changed when I attended a
+                  youth camp, where I saw young people passionately serving God.
+                  One night, I felt a deep conviction and surrendered my life to
+                  Jesus. Since then, my life has been transformed by His grace.
+                  I have found peace, purpose, and a hunger for His Word. To any
+                  young person reading this—God loves you and is ready to change
+                  your life if you surrender to Him."
                 </p>
               </motion.div>
             </div>
@@ -262,7 +276,7 @@ const Home = () => {
       </div>
 
       {/* Contact Section */}
-      <div id="contact" className="py-20 bg-gray-100">
+      <div id="contact" className="py-20 bg-blue-200">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <motion.h2
             className="text-3xl sm:text-4xl font-extrabold text-center mb-10"
