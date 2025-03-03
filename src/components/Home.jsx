@@ -32,7 +32,7 @@ const Home = () => {
 
         {/* Text and buttons with animation */}
         <motion.div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-blue"
           initial={{ opacity: 0, scale: 0.8 }} // Start with smaller scale and hidden
           animate={{ opacity: 1, scale: 1 }} // Fade in and scale up to full size
           transition={{
@@ -42,7 +42,7 @@ const Home = () => {
           }}
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4">
-            Welcome to <p className="text-gray-800">YAFCA</p>
+            Welcome to <p className="text-pink-400">YAFCA</p>
           </h1>
           <p>Where Faith Meets Action.</p>
           <p className="text-lg sm:text-xl md:text-2xl mb-6">
@@ -295,8 +295,8 @@ const Home = () => {
                     <FaMapMarkerAlt className="text-red-500 w-6 h-6" />
                     <p className="font-semibold">Our Office</p>
                   </div>
-                  <p>123 Main Street, Suite 456</p>
-                  <p>Cityville, ST 12345</p>
+                  <p>124 Street, uphill</p>
+                  <p>East Legon, Accra - Ghana</p>
                 </div>
 
                 {/* Thin Line Divider */}
@@ -308,10 +308,10 @@ const Home = () => {
                     <FaPhoneAlt className="text-green-500 w-6 h-6" />
                     <p className="font-semibold">Contact Information</p>
                   </div>
-                  <p>Phone: (123) 456-7890</p>
+                  <p>Phone: (+233) 054-248-7890</p>
                   <div className="flex items-center justify-center space-x-2">
                     <FaEnvelope className="text-blue-500 w-6 h-6" />
-                    <p>Email: contact@example.com</p>
+                    <p>Email: contact@yafcaghana.com</p>
                   </div>
                 </div>
               </motion.div>
